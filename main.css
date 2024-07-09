@@ -1,0 +1,73 @@
+/*
+@author		mike s
+@date		09.07.2024
+@source		
+https://palettes.shecodes.io/palettes/1548#palette
+
+hellblau	#e4f1fe
+meerblau	#8dc6ff 
+dunkelblau 	#22313f 
+grau 		#34495e
+*/
+
+
+.html {
+}
+
+body {
+	margin: 0;
+}
+
+.body {
+	background-color: #8dc6ff; 
+	display: inline-block; 
+	text-align: center;
+}
+
+.header { 
+	background-image: url('header.jpg'); 
+	background-color: #34495e;
+	margin: 0px;
+	padding: 0px;
+	height: 10em; 
+}
+
+.h1 {
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
+
+.nav {
+	overflow: hidden;
+}
+
+.main-content { 
+	padding-top: 50px;
+}
+
+.table-pics {
+	width: 100px;
+}
+
+.form {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer {
+	position: auto;
+	text-align: center;
+	width: 100%;
+	padding-top: 50px;
+	color: white;
+	background-color: #22313f;
+}
+
+.footer-p {
+	margin: 0;
+}
+
+
+.footer-link {
+	color: white;
+}
