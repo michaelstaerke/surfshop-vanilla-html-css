@@ -1,0 +1,103 @@
+<!--
+@author		
+@date
+
+@source
+https://palettes.shecodes.io/palettes/1548#palette
+-->
+
+
+<!doctype html>
+<html>
+
+	<head>
+		<!-- meta tags um suchmaschinen informationen zu meiner site zu vermitteln -->
+		<meta charset="utf-8">
+		<title>Surfshop</title>
+		<link rel="stylesheet" type='text/css' href="main.css">
+		<style>
+		body { background-color: #8dc6ff; }
+		</style>
+	</head>
+  
+	<body>
+		
+		<div class="header">
+			<header>
+				<h1>&nbsp</h1>
+				<p>&nbsp</p>
+			</header>
+		</div>
+
+		<div class="h1">
+				<h1>Surfshop</h1>
+		</div>
+		
+		<!--
+		<nav>
+			<ul>
+			  <a href="#">Home</a>
+			  <a href="#">Surfen 1</a>
+			  <a href="#">Surfen 2</a>
+			  <a href="#">Kontakt</a>
+			</ul>
+		</nav>
+		-->
+		
+		<!--
+		<div class="nav">
+			<a class="active" href="#home">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Kontakt</a>
+			<a href="#about">Über</a>
+		</div> 
+		--> 
+	
+		<div class="main-content">
+		
+			<h1>Surfartikel</h1>
+
+			<table class="table-surfboards">
+				<tr>
+				  <td><img class="table-pics" src="https://my.contentserver24.de/fileadmin/349/shop_common/thumbnails_600/yc5Rc1_Eyibz_3.jpg"></td>
+				  <td><img class="table-pics" src="https://ih1.redbubble.net/image.364758317.5299/flat,750x1000,075,f.u2.jpg"></td>
+				</tr>
+				
+				<tr>
+				  <td><img class="table-pics" src="https://www.tradeinn.com/f/13761/137614040_4/nsp-foil-610-paddel-surfbrett.jpg"></td>
+				  <td><img class="table-pics" src="https://www.savebarn.co.nz/image/cache/catalog/surf204_43034826-1-sz-unmarked-85696-1000x1000.jpg"></td>
+				</tr>
+			</table>
+			
+			<div class="form">
+				<form id="form-order">
+					<label for="fname">Artikel Name eingeben:</label><br>
+					<input type="text" id="fname" name="fname" value="... ">
+					<br>
+					<label for="lname">Artikel Anzahl eingeben:</label>
+					<br>
+					<input type="text" id="lname" name="lname" value="... ">
+					<br>
+					<br>
+					<input type="button" onclick="myFunction()" value="Bestellung abschicken">
+				</form> 
+			</div>
+			
+			<div class="footer">
+				<footer>
+					<p>2024</p>
+					<p class "footer-p"><a class="footer-link" href="">Surf-Shop.com</a></p>
+				</footer> 	
+			</div>
+			
+		</div>
+		<script>
+			function myFunction() 
+			{ 
+				document.getElementById("form-order").submit(); 
+				alert ("Bestellung eingegangen");  // oder
+			}
+		</script>
+		
+  </body>
+</html>
