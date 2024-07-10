@@ -6,16 +6,18 @@
 @source		
 https://palettes.shecodes.io/palettes/1548#palette
 
-hellblau	#e4f1fe
-meerblau	#8dc6ff 
-dunkelblau 	#22313f 
-grau 		#34495e
+dunkelblau	#1b262c
+meerblau	#0f4c75
+royalblau 	#3282b8
+hellblau	#bbe1fa; 
 
 */
 
 html {
-    height: 100%;
+    /* 
+	height: 100%;
 	width: 100%;
+	*/
 	padding: 0;
 	margin: 0;
 }
@@ -26,50 +28,94 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	background-color: #8dc6ff; 
-}
-
-.main-content {
+	font-family: tahoma;
+	background-color: #bbe1fa; 
 
 }
 
-.header { 
+.main {
+
+}
+
+header { 
 	background-image: url('pics/header.jpg'); 
-	background-color: #34495e;
+	/* background-color: #34495e; */
 	margin: 0px;
 	padding: 0px;
+	padding-top: 175px;
 	height: 10em; 
 }
 
-.h1 {
+nav {
+	overflow: hidden;
+	background-color: #0f4c75;
+	position: fixed;
+	/* text-align: left; */
+	align-items: center;
+	top: 0; 
+	width: 100%;
+	height: 75px;
+}
+
+.navbar {
+	padding-top: 20px;
+}
+
+.nav-a {
+	color: #e4f1fe;
+	font-size: 22px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+h1 {
+	/* 
 	margin-top: 75px;
 	margin-bottom: 50px;
+	*/
+	padding-top: 100px;
+	color: #0f4c75;
 }
 
-.nav {
-	overflow: hidden;
+.main { 
+	padding-top: 0px;
 }
 
-.main-content { 
+.table-surfgear {
+    margin-left: auto;
+    margin-right: auto;
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .table-surfgear-pics {
-	width: 100px;
+	/* width: 100px; */
+	width: auto;
+	height: 100px;
+	margin: 20px;
 }
 
-.form-surfgear {
+.td {
+	
+}
+
+.form-surfgear-order {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+.form-labels {
+	padding-top: 50px;
 }
 
 .footer {
 	position: auto;
 	text-align: center;
 	width: 100%;
+	height: 200px;
 	padding-top: 50px;
 	color: white;
-	background-color: #22313f;
+	background-color: #1b262c;
 }
 
 .footer-p {

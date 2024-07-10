@@ -1,0 +1,14 @@
+
+table of contents
+1.
+2.
+3.
+
+
+-------------------
+1. color palettes :
+
+#cfe0e8		grau blau 
+#b7d7e8		baby blau
+#87bdd8		mittel blau
+#daebe8		oliv blau
