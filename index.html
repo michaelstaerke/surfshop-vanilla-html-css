@@ -1,6 +1,6 @@
 <!--
 @author		MikeS
-@date		09.07.2024
+@date		14.07.2024
 -->
 
 <!doctype html>
@@ -42,18 +42,18 @@
 			<table class="table-surfgear">
 				<tr>
 					<td class="td">Board 1
-						<img class="table-surfgear-pics" src="/pics/board-1.jpg">
+					<img class="table-surfgear-pics" src="/pics/board-1.jpg">
 					</td>
 					<td class="td">Board 2
-						<img class="table-surfgear-pics" src="/pics/board-2.jpg">
+					<img class="table-surfgear-pics" src="/pics/board-2.jpg">
 					</td>
 				</tr>
 				<tr>
 					<td class="td">Board 3
-						<img class="table-surfgear-pics" src="pics/board-3.jpg">
+					<img class="table-surfgear-pics" src="pics/board-3.jpg">
 					</td>
 					<td class="td">Board 4
-						<img class="table-surfgear-pics" src="pics/board-4.jpg">
+					<img class="table-surfgear-pics" src="pics/board-4.jpg">
 					</td>
 				</tr>
 			</table>
@@ -61,27 +61,50 @@
 			<h1>Bestellung</h1>
 			<!---->
 			<div class="form-surfgear-order">
-				<form class="form-surfgear-order">
-					<label for="form-name" class="form-labels">Artikel Name eingeben:</label><br>
-					<input 	type="text" 
-							id="form-name" 
-							name="form-name">
+				<form 	class="forms"
+						class="form-surfgear-order">
+					
+					<label 	for="form-name" 
+							class="form-surfgear-labels">Artikel auswählen:
+					</label>
 					<br>
-					<label for="label-name" class="form-labels">Artikel Anzahl eingeben:</label>
+					<select name="Größe" class="form-inputs">
+						<option>Board 1</option>
+						<option>Board 2</option>
+						<option>Board 3</option>
+						<option>Board 4</option>
+					</select>
+					<br>
+					<label 	for="label-name" 
+							class="form-surfgear-labels">Artikel Anzahl eingeben:
+					</label>
 					<br>
 					<input	type="text" 
 							id="label-name" 
-							name="label-name">
+							name="label-name"
+							class="form-inputs">
 					<br>
-					<label for="label-name" class="form-labels">E-Mail angeben:</label>
+					<label 	for="label-name" 
+							class="form-surfgear-labels">Größe auswählen:
+					</label>
 					<br>
-					<input type="text" 
+					<select name="Größe" class="form-inputs">
+						<option>Kurz</option>
+						<option>Mittel</option>
+						<option>Lang</option>
+					</select>
+					<br>
+					<label for="label-name" class="form-surfgear-labels">E-Mail angeben:</label>
+					<br>
+					<input 	class="form-inputs"
+							type="text" 
 							id="label-name" 
 							name="label-name" 
 							value="">
 					<br>
 					<br>
 					<input  type="order-button" 
+							class="form-buttons"
 							id="submit" 
 							onclick="myFunction()" 
 							value="Bestellung abschicken">
@@ -90,6 +113,40 @@
 					<p id="submit-text"> </p>
 				</form> 
 			</div>
+			<!---->
+			<h2>Kontaktformular</h2>
+			<form   class="form-contact" 
+					action="contact.html" 
+					id="contact-person"
+					method="post">
+				<label class="h2" form="contact-person">Vor- und Nachname:</label>
+				<br>
+				<input 	type="text" 
+						class="form-inputs" 
+						name="name" 
+						id="name" 
+						maxlength="30">
+				<br>
+				<label for="name">E-Mail Adresse:</label>
+				<br>
+				<input 	type="text" 
+						class="form-inputs" 
+						name="email" 
+						id="name" 
+						maxlength="30">
+				<br>
+				<br>
+				<button type="contact-button-reset" class="form-buttons">Eingaben zurücksetzen</button>
+				<br>
+				<button type"submit-contact" 
+						class="form-buttons"
+						onclick="sendContactData()">
+				Abfrage absenden
+				</button>
+				<!-- Vorlage
+				<input type="submit-contact" value="Submit" onclick="getData()"> 
+				-->
+			</form>
 		</div>
 		<!---->
 		<div class="footer">
