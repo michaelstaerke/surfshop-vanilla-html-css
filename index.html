@@ -63,12 +63,10 @@
 			<div class="form-surfgear-order">
 				<form 	class="forms"
 						class="form-surfgear-order">
-					
-					<label 	for="form-name" 
-							class="form-surfgear-labels">Artikel auswählen:
+					<label for="form-name" class="form-surfgear-labels">Artikel auswählen:
 					</label>
 					<br>
-					<select name="Größe" class="form-inputs">
+					<select id="board-picked-model" name="Größe" class="form-inputs">
 						<option>Board 1</option>
 						<option>Board 2</option>
 						<option>Board 3</option>
@@ -80,7 +78,7 @@
 					</label>
 					<br>
 					<input	type="text" 
-							id="label-name" 
+							id="boards-amount" 
 							name="label-name"
 							class="form-inputs">
 					<br>
@@ -88,7 +86,7 @@
 							class="form-surfgear-labels">Größe auswählen:
 					</label>
 					<br>
-					<select name="Größe" class="form-inputs">
+					<select id="board-picked-size" name="Größe" class="form-inputs">
 						<option>Kurz</option>
 						<option>Mittel</option>
 						<option>Lang</option>
@@ -98,15 +96,15 @@
 					<br>
 					<input 	class="form-inputs"
 							type="text" 
-							id="label-name" 
+							id="board-order-email" 
 							name="label-name" 
 							value="">
 					<br>
 					<br>
-					<input  type="order-button" 
+					<input  type="submit-order" 
 							class="form-buttons"
 							id="submit" 
-							onclick="myFunction()" 
+							onclick="" 
 							value="Bestellung abschicken">
 					<br>
 					<br>
@@ -138,7 +136,7 @@
 				<br>
 				<button type="contact-button-reset" class="form-buttons">Eingaben zurücksetzen</button>
 				<br>
-				<button type"submit-contact" 
+				<button type="submit-contact" 
 						class="form-buttons"
 						onclick="sendContactData()">
 				Abfrage absenden
