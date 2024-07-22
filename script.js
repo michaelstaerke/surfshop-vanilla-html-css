@@ -1,27 +1,32 @@
 /*
-@author     MikeS
-@date       14.07.2024
+=============================
+@author     MikeS			=
+@date       22.07.2024		=
+=============================
 */
 
 
-const submitOrder = document.getElementById('submit-order');
-const submitContact = document.getElementById('submit-contact');
+"use strict";
 
-window.addEventListener("load", function() 
+//const submitOrder = document.getElementById('submit-order');
+//const submitContact = document.getElementById('submit-contact');
+
+const submitOrder = document.querySelector("submit-order");
+const submitContact = document.querySelector("submit-contact");
+
+
+submitOrder.addEventListener("click", (event) => 
 {
-	submitOrder.addEventListener("click", function() 
-	{
-		saveDataOrder();
-		alert("Bestellung eingegangen. \n " 
-				+boardModelTxt, +boardsAmount, +boardSize, +boardOrderEmail);
-	}, false);
-
-	submitContact.addEventListener("click", function() 
-	{
-		saveDataContact();
-		alert("Kontakt Nachricht eingegangen.");
-	}, false);
+	saveDataOrder();
+	alert("Bestellung lautet: \n "+boardModelTxt, +boardsAmount, +boardSize, +boardOrderEmail);
 });
+
+submitContact.addEventListener("click", (event) => 
+{
+	saveDataContact();
+	alert("Kontakt Nachricht eingegangen.");
+});
+
 
 function saveDataOrder() 
 {

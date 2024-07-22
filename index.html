@@ -1,6 +1,8 @@
 <!--
-@author		MikeS
-@date		14.07.2024
+=============================
+@author		MikeS			=
+@date		14.07.2024		=
+=============================
 -->
 
 <!doctype html>
@@ -101,9 +103,10 @@
 							value="">
 					<br>
 					<br>
-					<input  type="submit-order" 
+					
+					<input  type="submit" 
+							id="submit-order" 
 							class="form-buttons"
-							id="submit" 
 							onclick="" 
 							value="Bestellung abschicken">
 					<br>
@@ -114,7 +117,6 @@
 			<!---->
 			<h2>Kontaktformular</h2>
 			<form   class="form-contact" 
-					action="contact.html" 
 					id="contact-person"
 					method="post">
 				<label class="h2" form="contact-person">Vor- und Nachname:</label>
@@ -130,17 +132,25 @@
 				<input 	type="text" 
 						class="form-inputs" 
 						name="email" 
-						id="name" 
+						id="email" 
 						maxlength="30">
+				<br>
+				<label for="kontaktnachricht">Nachricht</label>
+				<br>
+				<textarea 	class="form-inputs"
+							name="contact-message"
+							id="textarea-contact-message"
+							maxlength="200">
+				</textarea>
 				<br>
 				<br>
 				<button type="contact-button-reset" class="form-buttons">Eingaben zurücksetzen</button>
 				<br>
-				<button type="submit-contact" 
+				<input type="submit" 
+						id="submit-contact"
 						class="form-buttons"
-						onclick="sendContactData()">
-				Abfrage absenden
-				</button>
+						value="Abfrage absenden"
+				</input>
 				<!-- Vorlage
 				<input type="submit-contact" value="Submit" onclick="getData()"> 
 				-->

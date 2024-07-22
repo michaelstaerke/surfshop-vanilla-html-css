@@ -13,6 +13,7 @@ hellblau	#bbe1fa;
 
 */
 
+
 html {
     /* 
 	height: 100%;
@@ -100,7 +101,7 @@ h1 {
 }
 
 .forms {
-	border
+	/* border */
 }
 
 .form-surfgear-order {
@@ -126,6 +127,10 @@ h1 {
 
 .form-contact {
 	padding-bottom: 100px;
+}
+
+.textarea-contact-message {
+	resize: horizontal;
 }
 
 .footer {
